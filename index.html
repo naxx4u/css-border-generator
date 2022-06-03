@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="css.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS border generator</title>
+  </head>
+  <body>
+    <h1>CSS Radius Generator</h1>
+    <div class="flex-wrapper">
+      <div class="wrapper">
+        <div class="wrapper-top">
+          <div class="left-top-range">
+            <input
+              class="input"
+              type="range"
+              name=""
+              id="left-top"
+              value="0"
+              min="0"
+              max="100"
+            />
+            <div class="result" id="result-tl">0</div>
+          </div>
+          <div class="left-right-range">
+            <input
+              class="input"
+              type="range"
+              name=""
+              id="right-top"
+              value="0"
+              min="0"
+              max="100"
+            />
+            <div class="result" id="result-tr">0</div>
+          </div>
+        </div>
+        <div class="wrapper-mid">
+          <div class="cube"></div>
+        </div>
+        <div class="wrapper-bot">
+          <div class="left-bot-range">
+            <input
+              class="input"
+              type="range"
+              name=""
+              id="left-bot"
+              value="0"
+              min="0"
+              max="100"
+            />
+            <div class="result" id="result-bl">0</div>
+          </div>
+          <div class="right-bot-range">
+            <input
+              class="input"
+              type="range"
+              name=""
+              id="right-bot"
+              value="0"
+              min="0"
+              max="100"
+            />
+            <div class="result" id="result-br">0</div>
+          </div>
+        </div>
+      </div>
+      <div class="total-result">
+        <button id="btn">Result</button>
+        <span>border-radius: </span>
+        <span id="totalResult"></span>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
