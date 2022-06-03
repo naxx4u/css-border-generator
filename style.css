@@ -3,15 +3,21 @@ h1 {
     text-align: center;
     margin: 0;
 }
+h4 {margin: 0; padding-right: 5px; }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
 .flex-wrapper{
     width: 100%;
-    height: 60vh;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-flow: column;
     justify-content: center;
 }
 .wrapper{
+    margin-top: 100px;
     width: 50%;
     height: 50%;
     display: flex;
@@ -27,6 +33,24 @@ h1 {
 .wrapper-mid{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center ;
+}
+.hw-inputs{
+    margin-top: 10px;
+}
+.h-input,
+.w-input{
+    display: flex;
+    margin-top: 15px;
+}
+
+#width,
+#height{
+    width: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
 }
 .cube{
     width: 200px;

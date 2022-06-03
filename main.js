@@ -16,6 +16,8 @@ const cube = document.querySelector('.cube')
 const total = document.getElementById('totalResult')
 const btn = document.getElementById('btn')
 
+const widthInput = document.getElementById('width')
+const heightInput = document.getElementById('height')
 
 const changeRadius = () => {
     tlResult.innerHTML = tlRange.value
@@ -26,6 +28,14 @@ const changeRadius = () => {
     cube.style.borderRadius = tlRange.value + 'px ' + trRange.value + 'px '  + brRange.value + 'px '  + blRange.value + 'px'
 }
 
+const changeSize = (e) =>{ 
+    cube.style.width = widthInput.value + 'px'
+    cube.style.height = heightInput.value + 'px'
+    
+}
+
+
+
 const totalResult = () => {
     total.innerHTML = tlRange.value + ' ' + trRange.value + ' '  + brRange.value + ' '  + blRange.value + ' '
 }
@@ -33,5 +43,13 @@ const totalResult = () => {
 for(node of input){
     node.addEventListener('input', changeRadius)
 }
+
+
+
+widthInput.addEventListener('input', changeSize)
+heightInput.addEventListener('input', changeSize)
+console.log('input');
+
+
 
 btn.addEventListener('click', totalResult)
